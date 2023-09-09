@@ -10,7 +10,7 @@ import com.supermarket.pages.LogInPage;
 public class LogInTest extends Base {
 	LogInPage loginpage;
 
-	@Test(groups = { "Smoke"  })
+	@Test(groups = { "Smoke"," "  })
 	public void verify_LogIn() {
 		loginpage = new LogInPage(driver);
 		loginpage.logIn();
