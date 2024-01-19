@@ -1,0 +1,10 @@
+element_repository\ManageOrderPage.class
+utilities\ScreenShotCapture.class
+element_repository\Home_Page.class
+element_repository\LoginPage.class
+element_repository\ManageSearch.class
+utilities\FakerUtility.class
+utilities\ExtentReportUtility.class
+utilities\GeneralUtilities.class
+element_repository\MnageListPage.class
+utilities\ExcelCode.class
