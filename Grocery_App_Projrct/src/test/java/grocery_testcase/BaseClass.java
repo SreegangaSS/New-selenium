@@ -2,7 +2,7 @@ package grocery_testcase;
 
 import org.testng.annotations.Test;
 
-import utilities.ScreenShotCapture;
+import utilities.ScreenShotCaptureUtilities;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -25,7 +25,7 @@ public static Properties properties;
 
 public static void readFromProperties() throws IOException {
 	properties = new Properties();
-	//fileinputsream used to read data/write from external files in byte format used in java
+	//fileinputsream used to read data/write from external files	 in byte format used in java
 	FileInputStream ip = new FileInputStream(
 	System.getProperty("user.dir") + "//src//main//resources//config.properties");
 	properties.load(ip);
@@ -49,7 +49,7 @@ public static void readFromProperties() throws IOException {
 		
 		driver = new ChromeDriver();
 		driver.get(properties.getProperty("baseUrl"));
-		//driver.get("https://groceryapp.uniqassosiates.com/admin/login");
+		driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(100));
 	
@@ -59,7 +59,7 @@ public static void readFromProperties() throws IOException {
 	public void afterMethod(ITestResult itResult) throws IOException {
 		if(itResult.getStatus()==ITestResult.FAILURE)
 		{
-			ScreenShotCapture sc=new ScreenShotCapture();
+			ScreenShotCaptureUtilities sc=new ScreenShotCaptureUtilities();
 			sc.captureFailureScreenShot(driver, itResult.getName());
 		}
 		driver.close();
