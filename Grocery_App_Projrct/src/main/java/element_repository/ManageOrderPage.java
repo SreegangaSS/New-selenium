@@ -27,9 +27,9 @@ public class ManageOrderPage {
 	}
 	public void clickButton()
 	{
-		g.clickButton(manage);
+	manage.click();
 	}
 	public void orderButton() {
-		g.orderButton(search);
+		search.click();
 	}
 }

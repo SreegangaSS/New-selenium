@@ -23,11 +23,11 @@ public class MnageListPage {
 	
 	public void clickSerachButtonManage()
 	{
-		g.clickButton(searchButton);
+		searchButton.click();
 	}
 	public void enterOrderButton()
 	{
-		g.enterValue(oderIDButton, "708");
+		oderIDButton.click();
 	}
 
 }
