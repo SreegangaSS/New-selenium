@@ -14,7 +14,7 @@ public class GeneralUtilities {
 		return text;
 	}
 
-	/*public void clickButton(WebElement element) {
+	public void clickButton(WebElement element) {
 		element.click();
 	}
 
@@ -24,7 +24,7 @@ public class GeneralUtilities {
 
 	public void enterValue(WebElement element, String value) {
 		element.sendKeys(value);
-	}*/
+	}
 
 	public String getValueFromDropdown(WebElement element, int value) {
 		Select select = new Select(element);

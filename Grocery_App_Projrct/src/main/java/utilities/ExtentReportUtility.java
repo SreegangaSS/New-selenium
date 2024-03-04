@@ -87,6 +87,7 @@ public class ExtentReportUtility implements ITestListener {
 
 	public void onFinish(ITestContext context) {
 		reports.flush();//to generate extend report
+		
 	}
 
 }

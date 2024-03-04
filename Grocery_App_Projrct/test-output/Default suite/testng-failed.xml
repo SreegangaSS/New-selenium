@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="grocery_testcase.LoginTestCase">
+      <class name="grocery_testcase.PushNotifications">
         <methods>
+          <include name="verifyCssValuesOfSendButtonInPushNotificationPage"/>
+          <include name="verifySendOfPushNotification"/>
           <include name="beforeMethod"/>
+          <include name="verifyBorderColorOfSendButtonInPushNotificationPage"/>
           <include name="afterMethod"/>
-          <include name="verifyLogin"/>
+          <include name="verifyAttributeValueOfClassOfSendButtonInPushNotificationPage"/>
         </methods>
-      </class> <!-- grocery_testcase.LoginTestCase -->
+      </class> <!-- grocery_testcase.PushNotifications -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
